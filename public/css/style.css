@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+#loginHeader{
+  padding: 10%;
+  text-align:center;
+  background-image: url("../img/background.jpeg");
+  background-position: 0% 70%;
+  background-size: 110%;
+}
+
+#login{
+  font-family: 'Titan One';
+  color:black;
+  text-shadow: #FFFFFF 1px 1px, #FFFFFF -1px 1px, #FFFFFF -1px -1px, #FFFFFF 1px -1px;
+  font-size: 300%;
+}
+
+#toLogin{
+  display: flex;
+  justify-content: center;
+  font-family: "Concert One";
+  font-size: 150%;
+}
+
+#registerHead{
+  padding: 10%;
+  text-align:center;
+  background-image: url("../img/background.jpeg");
+  background-position: 0% 70%;
+  background-size: 110%;
+}
+
+#register{
+  font-family: 'Titan One';
+  color:black;
+  text-shadow: #FFFFFF 1px 1px, #FFFFFF -1px 1px, #FFFFFF -1px -1px, #FFFFFF 1px -1px;
+  font-size: 300%;
+}
+
+#toRegister{
+  display: flex;
+  justify-content: center;
+  font-family: "Concert One";
+  font-size: 150%;
+}
+
+#homeHeader{
+  padding: 10%;
+  text-align:center;
+  background-image: url("../img/background.jpeg");
+  background-position: 0% 70%;
+  background-size: 110%;
+}
+
+#welcome{
+  font-family: 'Titan One';
+  color:black;
+  text-shadow: #FFFFFF 1px 1px, #FFFFFF -1px 1px, #FFFFFF -1px -1px, #FFFFFF 1px -1px;
+  font-size: 300%;
+}
+
+a{
+  text-align: center;
+}
+
+#nav{
+  font-family: "Itim";
+  font-size: 150%;
+}
+
+#findHeader{
+  padding: 10%;
+  text-align:center;
+  color:white;
+  text-shadow: black 2px 2px,black -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+  font-size: 300%;
+  background-image: url("../img/find.jpg");
+  background-position: 0% 70%;
+  background-size: 110%;
+  font-family: 'Titan One';
+}
+
+#home{
+  padding: 2%;
+  text-align: center;
+  font-family: "Concert One";
+  font-size: 150%;
+}
+
+#find{
+  padding: 2%;
+  font-family: "Concert One";
+  font-size: 150%;
+}
+
+#searchButton:hover{
+  background-color:#54BAB9; 
+  transition: 0.3s all;
+  color:white; 
+  border:none;
+}
+
+#account{
+  padding: 2%;
+  text-align: center;
+  font-family: "Concert One";
+  font-size: 150%;
+}
+
+#accountHeader{
+  padding: 10%;
+  text-align:center;
+  color:white;
+  text-shadow: black 2px 2px,black -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+  font-size: 300%;
+  background-image: url("../img/find.jpg");
+  background-position: 0% 70%;
+  background-size: 110%;
+  font-family: 'Titan One';
+}
+
+#updateHeader{
+  padding: 10%;
+  text-align:center;
+  color:white;
+  text-shadow: black 2px 2px,black -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+  font-size: 300%;
+  background-image: url("../img/find.jpg");
+  background-position: 0% 70%;
+  background-size: 110%;
+  font-family: 'Titan One';
+}
+
+#update{
+  padding: 2%;
+  text-align: center;
+  font-family: "Concert One";
+  font-size: 150%;
+}
+
+#favHeader{
+  padding: 10%;
+  text-align:center;
+  color:white;
+  text-shadow: black 2px 2px,black -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+  font-size: 300%;
+  background-image: url("../img/find.jpg");
+  background-position: 0% 70%;
+  background-size: 110%;
+  font-family: 'Titan One';
+}
+
+#fav{
+  padding: 2%;
+  font-family: "Concert One";
+  font-size: 150%;
+}
+
+#restoHeader{
+  padding: 10%;
+  text-align:center;
+  color:white;
+  text-shadow: black 2px 2px,black -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+  font-size: 300%;
+  background-image: url("../img/find.jpg");
+  background-position: 0% 70%;
+  background-size: 110%;
+  font-family: 'Titan One';
+}
+
+#resto{
+  padding: 2%;
+  font-family: "Poiret One";
+  font-size: 150%;
+}
+
+#addReviewHead{
+  padding: 10%;
+  text-align:center;
+  color:white;
+  text-shadow: black 2px 2px,black -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+  font-size: 300%;
+  background-image: url("../img/find.jpg");
+  background-position: 0% 70%;
+  background-size: 110%;
+  font-family: 'Titan One';
+}
+
+#review{
+  padding: 2%;
+  font-family: "Concert One";
+  font-size: 150%;
+}
+
+#resultsHead{
+  padding: 10%;
+  text-align:center;
+  color:white;
+  text-shadow: black 2px 2px,black -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+  font-size: 300%;
+  background-image: url("../img/find.jpg");
+  background-position: 0% 70%;
+  background-size: 110%;
+  font-family: 'Titan One';
+}
+
+#restaurants{
+  padding: 2%;
+  font-family: "Concert One";
+  font-size: 150%;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include("partials/header.ejs") %>
+  <title> Find My Restaurant </title>
+</head>
+<body>
+  <header id="registerHead"><h1 id="register"> Sign up to Find My Restaurant</h1></header>
+  <br>
+
+  <div id="toRegister">
+
+    <div class="v-div">
+      <form method="POST" action="/register">
+        <br>
+      Username:
+        <input type="text" name="username">
+        <br>
+        <br>
+        Email:
+        <input type="email" name="email">
+        <br>
+        <br>
+        Password:
+        <input type="password" name="password">
+        <br>
+        <br>
+        Retype password:
+        <input type="password" name="rpassword">
+        <br>
+        <br>
+        <% if (typeof(error) != "undefined") { %>
+         <%= error %>
+      <% } %>
+        <br>
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+  <button class="btn btn-outline-primary">Register</button>
+      </form>
+
+      <form action="/">
+
+          <button class="btn btn-outline-secondary">Login</button>
+    
+  </div>
+  
+</body>
+</html>

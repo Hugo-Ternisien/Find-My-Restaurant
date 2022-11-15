@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include("partials/header.ejs") %>
+  <title> Home </title>
+</head>
+<body> 
+
+  <header id="homeHeader"><h1 id="welcome"> Welcome to Find My Restaurant </h1></header>
+  
+  <%- include("partials/navbar.ejs") %>
+
+    <br>
+    <div id="home">
+    Here you can find all the best restaurants near you! <br><br>
+    <form action="/findResto">
+    <div class="d-grid gap-2 col-4 mx-auto">
+    <button class=" btn btn-primary "> Find </button>
+    </div>
+  </form>
+      <br>
+    Don't hesitate to add your favorites to your favorites to find them quickly. <br><br>
+    <form action="/displayFav">
+      <div class="d-grid gap-2 col-5 mx-auto">
+    <button class="btn btn-dark"> Favorites </button>
+      </div>
+      <br>
+  </form>
+    You can also leave comments on each new experience to help others choose the best restaurant. 
+</div>
+</body>
+</html>

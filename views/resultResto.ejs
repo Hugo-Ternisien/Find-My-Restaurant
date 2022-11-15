@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include("partials/header.ejs") %>
+  <title> Result </title>
+</head>
+<body> 
+  <header id="resultsHead">
+    <h1>List of the Restaurants</h1>
+    </header>
+  <%- include("partials/navbar.ejs") %>
+  <br>
+     <div id="restaurants">
+
+   <% for(let i = 0; i < resto.length; i += 1) { %>
+    
+        Name: <a href="/inDepthResto?id=<%= i %>"> <%= resto[i].name %> </a> <br>
+            Phone Number: <%= resto[i].phone_number %> <br>
+            Street Address : <%= resto[i].address.street_addr %> <br>
+            City : <%= resto[i].address.city %> <br>
+            State : <%= resto[i].address.state %> <br>
+            Zipcode: <%= resto[i].address.zipcode %> <br>
+            
+              <form method="post" action="/addFav">
+    <input type="hidden" name="lat" value="<%=resto[i].address.lat%>">
+    <input type="hidden" name="lon" value="<%=resto[i].address.lon%>"><br>
+                
+      <button class="btn btn-outline-dark">Add to favorites</button>
+    </form>
+    
+    <form action="/addReview">
+      <input type="hidden" name="nameR" value"<%=resto[i].name%>">
+      <input type="hidden" name="id" value="<%=i%>">
+      <br>
+      <button class="btn btn-outline-dark">Add a review</button>
+      <input type="hidden" name="lat" value="<%=resto[i].address.lat%>">
+    <input type="hidden" name="lon" value="<%=resto[i].address.lon%>"><br>
+    </form> 
+              
+      <form action="/inDepthReview"><br>
+       <input type="hidden" name="restoName" value="<%=resto[i].name%>"> 
+      <button class="btn btn-outline-dark">Show reviews</button>
+    </form><br><br><hr>
+   <% } %>
+   </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include("partials/header.ejs") %>
+  <title> Find </title>
+</head>
+<body> 
+
+   <header id="findHeader">Find a restaurant</header>
+  <%- include("partials/navbar.ejs") %>
+    <div id="find">
+      <br>
+    <form method="post" action="/resultResto">
+    City:
+    <input type="text" name="city"><br>
+      <br>
+      Sort by :
+      <select name="sort">
+        <option value="relevance">relevance</option>
+        <option value="cheapest">cheapest</option>
+        <option value="rating">rating</option>
+      </select>
+      <br>
+      <br>
+      
+    <button id="searchButton">Search Restaurants</button>
+  </form>
+    </div>
+  
+</body>
+</html>

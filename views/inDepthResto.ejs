@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include("partials/header.ejs") %>
+  <title> Result </title>
+</head>
+<body> 
+  <header id="restoHeader">
+    <h1>Information about the Restaurant</h1>
+  </header>
+  <%- include("partials/navbar.ejs") %>
+
+   
+    
+      <div id="resto"> Name: <%= resto.name %> <br>
+            Phone Number: <%= resto.phone_number %> <br>
+            Street Address : <%= resto.address.street_addr %> <br>
+            City : <%= resto.address.city %> <br>
+            State : <%= resto.address.state %> <br>
+            Zipcode: <%= resto.address.zipcode %> <br>
+            Operational Hours: <br>
+              Monday: <%= resto.local_hours.operational.Monday %> <br>
+              Tuesday: <%= resto.local_hours.operational.Tuesday %> <br>
+              Wednesday: <%= resto.local_hours.operational.Wednesday %> <br>
+              Thursday: <%= resto.local_hours.operational.Thursday %> <br>
+              Friday: <%= resto.local_hours.operational.Friday %> <br>
+              Saturday: <%= resto.local_hours.operational.Saturday %> <br>
+              Sunday: <%= resto.local_hours.operational.Sunday %> <br>
+            Rating : <%= resto.weighted_rating_value %> <br>
+
+              
+            Menu:  
+              <% for(let j = 0; j < resto.cuisines.length; j += 1) { %>
+                  <%= resto.cuisines[j] %>
+              <% } %>
+
+                <br>
+                <br>
+                <br>
+            Pictures of FOOD: 
+                <br>
+                <br>
+            <% for(let k = 0; k < resto.food_photos.length; k += 1) { %> 
+                <img src ="<%= resto.food_photos[k] %>" width="50%">
+                <br>
+                <br>
+            <% } %> 
+            Logo:
+              <br>
+              <br>
+            <% for(let k = 0; k < resto.logo_photos.length; k += 1) { %> 
+                <img src ="<%= resto.logo_photos[k] %>">
+            <% } %> 
+      </div>
+
+   
+  
+</body>
+</html>
+
+

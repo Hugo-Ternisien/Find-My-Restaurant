@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include("partials/header.ejs") %>
+  <title> Result </title>
+</head>
+<body> 
+  <header id="restoHeader">
+    <h1>Information about the Restaurant</h1>
+  </header>
+  <%- include("partials/navbar.ejs") %>
+
+   
+    
+      <% for(let i = 0; i < rows.length; i += 1) { %>
+            Name: <%= rows[i].name %> <br>
+            Title : <%= rows[i].title %> <br>
+            Review : <%= rows[i].comment %> <br><br><br><hr>
+   <% } %>
+   </div>
+
+   
+  
+</body>
+</html>
+
+

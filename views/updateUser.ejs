@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include("partials/header.ejs") %>
+  <title> Account </title>
+</head>
+<body> 
+  <header id="updateHeader">
+    <h1>Update User Information</h1>
+  </header>
+  <%- include("partials/navbar.ejs") %>
+  <br>
+    <div id="update">
+
+    <form method="POST" action="/updateUser">
+
+    Username:
+    <%= user[0].username %> <br><br>
+
+    Mail:
+    <input type="email" name="usermail"
+      value="<%= user[0].mail %> "> <br><br>
+
+    Password:
+    <input type="password" name="password"> <br><br>
+      
+    
+    <button class="btn btn-outline-dark"> Update </button>
+  </form>
+   
+    <% if (typeof(error) != "undefined") { %>
+         <%= error %>
+      <% } %>
+  </div>
+  
+</body>
+</html>

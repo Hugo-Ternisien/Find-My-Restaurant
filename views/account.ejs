@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include("partials/header.ejs") %>
+  <title> Account </title>
+</head>
+<body> 
+    <header id="accountHeader">
+      <h1>Change your account information</h1>
+    </header>
+  <%- include("partials/navbar.ejs") %>
+    <div id="account">
+    <br>
+
+    
+    Username: <%= user[0].username %>
+      <br> <br>
+    Email Address: <%= user[0].mail %>
+      <br>
+      <br>
+    
+
+    <form action="/updateUser">
+    <button class="btn btn-outline-primary"> Update my infos </button>
+  </form>
+      <br>
+
+    <form action="/deleteAccount">
+    <button class="btn btn-outline-info"> Delete my account </button>
+  </form>
+      <br>
+
+  <form action="/displayFav">
+    <button class="btn btn-outline-dark"> Display Favorite </button>
+  </form>
+      <br>
+
+  <form action="/displaypReview">
+    <button class="btn btn-outline-dark"> Display your review </button>
+  </form>
+  </div>
+  
+</body>
+</html>

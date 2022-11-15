@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include("partials/header.ejs") %>
+  <title> Favorite </title>
+</head>
+<body>
+  <header id="favHeader">
+    <h1>Page of your Favorites</h1>
+  </header>
+  <%- include("partials/navbar.ejs") %>
+
+    <div id="fav">
+       <% for(let i = 0; i < array.length; i += 1) { %>
+        
+            Name: <%= array[i].name %> <br>
+            Phone Number: <%= array[i].phone_number %> <br>
+            Description : <%= array[i].description %> <br><br><hr>
+       <% } %>
+    </div>
+                
+  
+</body>
+</html>
